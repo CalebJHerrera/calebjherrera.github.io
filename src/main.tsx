@@ -1,21 +1,20 @@
 import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
-import {BrowserRouter, Routes, Route} from 'react-router'
+import {HashRouter, Routes, Route} from 'react-router'
 
 import './index.css'
-import Home from './Home/Home.tsx'
-import About from './About/About.tsx'
+import Home from './Home/Home'
+import About from './About/About'
 
 // type CurrentPage = "HomePage" | "AboutPage" | "404Page";
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
-        {/* Remove StrictMode while pushing to repo. */}
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     </StrictMode>
 )

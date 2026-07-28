@@ -1,4 +1,5 @@
 import './About.css'
+import {Link} from "react-router";
 
 export default function About() {
     return (
@@ -7,7 +8,7 @@ export default function About() {
             <p>From here you can:</p>
             <ul>
                 <li>
-                    <a href="/">Go to the Home Page</a>
+                    <Link to="/">Go to the Home page</Link>
                 </li>
             </ul>
         </>
