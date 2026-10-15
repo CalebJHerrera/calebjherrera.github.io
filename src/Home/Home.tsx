@@ -8,7 +8,7 @@ export default function Home() {
             <p>From here you can:</p>
             <ul>
                 <li>
-                    <Link to="/">Go to the Home Page</Link>
+                    <Link to="/">Stay on the Home Page</Link>
                 </li>
                 <li>
                     <Link to="/about">Go to the About Page</Link>
