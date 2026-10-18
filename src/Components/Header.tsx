@@ -24,7 +24,7 @@ export default function Header() {
                             to="/"
                             className="hover:text-cleb-accent active:text-cleb-secondary-accent"
                         >
-                            Projects
+                            About Me
                         </Link>
                     </div>
                     <div className={"cleb-depress"}>
@@ -32,16 +32,17 @@ export default function Header() {
                             to="/"
                             className="hover:text-cleb-accent active:text-cleb-secondary-accent"
                         >
-                            About
+                            Projects
                         </Link>
                     </div>
-                    <button
+                    <a
                         className={
                             "bg-cleb-base hover:bg-cleb-surface active:bg-cleb-accent text-cleb-accent active:text-cleb-secondary-accent cleb-depress border-2 px-7 py-2"
                         }
+                        href={"https://github.com/CalebJHerrera"}
                     >
                         Github
-                    </button>
+                    </a>
                 </div>
             </header>
         </>

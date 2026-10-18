@@ -29,6 +29,11 @@
     @apply active:translate-y-[1.5px];
 }
 
+@utility cleb-float {
+    @apply transition-transform;
+    @apply hover:-translate-y-1;
+}
+
 body {
     @apply font-departure-mono;
     @apply bg-cleb-base;
