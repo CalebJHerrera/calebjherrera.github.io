@@ -10,8 +10,8 @@ export default function Header() {
             >
                 <h1 className={"text-cleb-text"}>Website</h1>
                 <div className={"space-x-7"}>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/about">About</Link>
+                    <Link to="/">Projects</Link>
+                    <Link to="/">About</Link>
                     <button
                         className={
                             "bg-cleb-base hover:bg-cleb-surface active:bg-cleb-accent border-cleb-text border-2 px-7 py-2"
