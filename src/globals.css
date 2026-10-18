@@ -1,17 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
-@import 'tailwindcss';
-@import '@catppuccin/tailwindcss/macchiato.css';
+@import "https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css"; /* Hack font family */
+@import "https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"; /* Fira Code font family */
 
-/* Departure Mono has no CDN, sad :( */
-@font-face {
-    font-family: 'Departure Mono';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2409-1@1.0/DepartureMono-Regular.woff2') format(woff2);
-    font-weight: normal;
-    font-display: swap;
+@import "tailwindcss";
+@import "./styles/cleb.css";
+
+@utility font-fira {
+    font-family:
+        Fira Code,
+        monospace;
 }
 
-.root {
-    font-family: 'Departure Mono', monospace;
-    font-size: 22px;
-    background-color: var(--catppuccin-color-base);
+@utility font-hack {
+    font-family: Hack, monospace;
+}
+
+body {
+    @apply font-fira;
+    @apply bg-cleb-base;
 }

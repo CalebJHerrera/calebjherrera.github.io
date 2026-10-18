@@ -1,19 +1,16 @@
-import { Link } from "react-router"
-import './Home.css'
+import Header from "../Components/Header/Header.tsx";
 
 export default function Home() {
     return (
         <>
-            <h1>https://robot0730.is-a.dev - home of my first website</h1>
-            <p>From here you can:</p>
-            <ul>
-                <li>
-                    <Link to="/">Stay on the Home Page</Link>
-                </li>
-                <li>
-                    <Link to="/about">Go to the About Page</Link>
-                </li>
-            </ul>
+            <Header></Header>
+            <main className={"flex-1"}>
+                <div
+                    className={"border-cleb-edges m-7 border-2 p-7 text-base bg-cleb-surface text-cleb-text"}
+                >
+                    Hi this is a body element
+                </div>
+            </main>
         </>
-    )
+    );
 }

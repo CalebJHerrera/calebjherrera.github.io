@@ -1,0 +1,11 @@
+/* All my colors will be here, ditching catppuccin latte for a beige green style palette instead. */
+
+@theme {
+    --color-cleb-base: #E2E7DF; /* "Washed Matcha" */
+    --color-cleb-surface: #F4F6F2; /* "Alabaster Cream" */
+    --color-cleb-edges: #C5CDC0; /* "Soft Olive" */
+    --color-cleb-text: #18131E; /* "Deep Ink Plum" */
+    --color-cleb-secondary-text: #5C6360; /* "Muted Slate" */
+    --color-cleb-accent: #FF522B; /* "Acid Tangerine" */
+    --color-cleb-secondary-accent: #9D93ED; /* "Electric Lavender" */
+}

@@ -1,0 +1,6 @@
+# Ignore artifacts:
+.github
+.idea
+package-lock.json
+dist
+node_modules
