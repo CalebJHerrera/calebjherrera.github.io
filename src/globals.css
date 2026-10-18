@@ -33,3 +33,7 @@ body {
     @apply font-departure-mono;
     @apply bg-cleb-base;
 }
+
+html {
+    @apply overscroll-none;
+}
