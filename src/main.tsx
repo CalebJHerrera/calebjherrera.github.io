@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter, Routes, Route } from "react-router";
+import { Routes, Route, BrowserRouter } from "react-router";
 
 import "./globals.css";
 import Home from "./Home/Home";
@@ -10,12 +10,12 @@ import NotFound from "./NotFound/NotFound";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
-        <HashRouter>
+        <BrowserRouter>
             <Routes>
                 {/* The path strings are sensitive to spaces or ANY character please watch out */}
                 <Route path="/" element={<Home />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
-        </HashRouter>
+        </BrowserRouter>
     </StrictMode>,
 );

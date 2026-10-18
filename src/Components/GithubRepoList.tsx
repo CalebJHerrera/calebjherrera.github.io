@@ -55,7 +55,6 @@ export const GithubRepoList = ({ username, perPage = 10 }: RepoListProps) => {
         }
 
         void fetchRepos(); // Tell IDE that "I am not awaiting the promise, do whatever with it" here.
-
     }, [username, page, perPage]); // This last list runs the useEffect's content every time one of these variables changes. Very neat.
 
     // Now for the actual visual representation of the data. TODO: WTF THIS IS REALLY DAMN MESSY
@@ -64,6 +63,7 @@ export const GithubRepoList = ({ username, perPage = 10 }: RepoListProps) => {
             className={
                 "border-cleb-edges bg-cleb-surface text-cleb-text m-7 flex flex-col border-2 p-7 text-base"
             }
+            id={"github-projects"}
         >
             <h1 className={"mb-4 text-3xl"}>Github Projects</h1>
             {error && <p>Error has occurred: {error}</p>}
@@ -96,7 +96,7 @@ export const GithubRepoList = ({ username, perPage = 10 }: RepoListProps) => {
                     </div>
                     <div
                         className={
-                            "flex flex-row items-center justify-center gap-5 text-xl pt-7"
+                            "flex flex-row items-center justify-center gap-5 pt-7 text-xl"
                         }
                     >
                         <button

@@ -11,7 +11,7 @@
     font-display: swap;
 }
 
-@utility font-fira {
+@utility font-inter {
     font-family:
         Fira Code,
         monospace;
@@ -41,4 +41,5 @@ body {
 
 html {
     @apply overscroll-none;
+    @apply scroll-smooth;
 }
