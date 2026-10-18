@@ -65,7 +65,7 @@ export const GithubRepoList = ({ username, perPage = 10 }: RepoListProps) => {
             }
             id={"github-projects"}
         >
-            <h1 className={"mb-4 text-3xl"}>Github Projects</h1>
+            <h1 className={"mb-4 text-3xl font-space-grotesk"}>Github Projects</h1>
             {error && <p>Error has occurred: {error}</p>}
             {loading ? (
                 <p>Loading repos...</p>

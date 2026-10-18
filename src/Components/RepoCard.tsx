@@ -25,10 +25,10 @@ export const RepoCard = ({
                 >
                     {name}
                 </p>
-                <p className={"font-fira"}>{description}</p>
+                <p className={"text-xs font-space-grotesk"}>{description}</p>
                 <div className={"flex flex-row"}>
-                    <p className={"font-fira"}>Stars: </p>
-                    <p className={"font-fira text-cleb-accent"}>
+                    <p className={"text-sm"}>Stars: </p>
+                    <p className={"text-cleb-accent text-sm"}>
                         {stargazers_count}
                     </p>
                 </div>
