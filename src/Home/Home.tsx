@@ -6,7 +6,9 @@ export default function Home() {
             <Header></Header>
             <main className={"flex-1"}>
                 <div
-                    className={"border-cleb-edges m-7 border-2 p-7 text-base bg-cleb-surface text-cleb-text"}
+                    className={
+                        "border-cleb-edges bg-cleb-surface text-cleb-text m-7 h-screen border-2 p-7 text-base"
+                    }
                 >
                     Hi this is a body element
                 </div>

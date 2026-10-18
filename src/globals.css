@@ -1,8 +1,15 @@
-@import "https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css"; /* Hack font family */
 @import "https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"; /* Fira Code font family */
 
 @import "tailwindcss";
 @import "./styles/cleb.css";
+
+@font-face {
+    font-family: "Departure Mono";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2409-1@1.0/DepartureMono-Regular.woff2")
+        format("woff2");
+    font-weight: normal;
+    font-display: swap;
+}
 
 @utility font-fira {
     font-family:
@@ -10,11 +17,19 @@
         monospace;
 }
 
-@utility font-hack {
-    font-family: Hack, monospace;
+@utility font-departure-mono {
+    font-family:
+        Departure Mono,
+        monospace;
+}
+
+@utility cleb-depress {
+    @apply transition-transform;
+    @apply active:translate-x-[-1.5px];
+    @apply active:translate-y-[1.5px];
 }
 
 body {
-    @apply font-fira;
+    @apply font-departure-mono;
     @apply bg-cleb-base;
 }

@@ -5,19 +5,42 @@ export default function Header() {
         <>
             <header
                 className={
-                    "font-fira border-ctp-surface2 text-cleb-text sticky flex items-center justify-between bg-transparent px-7 py-3 align-middle"
+                    "text-cleb-text bg-cleb-base border-cleb-edges sticky top-0 z-50 flex items-center justify-between border-b-2 px-7 align-middle"
                 }
             >
-                <h1 className={"text-cleb-text"}>Website</h1>
-                <div className={"space-x-7"}>
-                    <Link to="/">Projects</Link>
-                    <Link to="/">About</Link>
+                <div>
+                    <h1 className={"text-cleb-text cleb-depress select-none"}>
+                        Website
+                    </h1>
+                </div>
+
+                <div
+                    className={
+                        "flex flex-row items-center space-x-7 px-7 py-2 text-center"
+                    }
+                >
+                    <div className={"cleb-depress"}>
+                        <Link
+                            to="/"
+                            className="hover:text-cleb-accent active:text-cleb-secondary-accent"
+                        >
+                            Projects
+                        </Link>
+                    </div>
+                    <div className={"cleb-depress"}>
+                        <Link
+                            to="/"
+                            className="hover:text-cleb-accent active:text-cleb-secondary-accent"
+                        >
+                            About
+                        </Link>
+                    </div>
                     <button
                         className={
-                            "bg-cleb-base hover:bg-cleb-surface active:bg-cleb-accent border-cleb-text border-2 px-7 py-2"
+                            "bg-cleb-base hover:bg-cleb-surface active:bg-cleb-accent text-cleb-accent active:text-cleb-secondary-accent cleb-depress border-2 px-7 py-2"
                         }
                     >
-                        Test
+                        Github
                     </button>
                 </div>
             </header>
