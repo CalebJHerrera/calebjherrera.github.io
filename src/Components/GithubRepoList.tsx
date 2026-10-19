@@ -113,7 +113,7 @@ export default function GithubRepoList({ username, perPage = 12 }: RepoListProps
                         <p>{page}</p>
                         <button
                             onClick={() => {
-                                setPage(Math.min(page + 1, repos.length));
+                                setPage(Math.min(page + 1, repos.length-1));
                             }}
                             disabled={repos.length < page}
                             className={
