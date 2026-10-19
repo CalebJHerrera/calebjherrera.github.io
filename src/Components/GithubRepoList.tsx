@@ -15,7 +15,7 @@ interface RepoListProps {
 
 const octokit = new Octokit();
 
-export const GithubRepoList = ({ username, perPage = 10 }: RepoListProps) => {
+export default function GithubRepoList({ username, perPage = 12 }: RepoListProps) {
     // React equivalent of @state variables in SwiftUi.
     const [repos, setRepos] = useState<Repo[]>([]);
     const [page, setPage] = useState<number>(1);
