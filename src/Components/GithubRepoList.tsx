@@ -15,7 +15,10 @@ interface RepoListProps {
 
 const octokit = new Octokit();
 
-export default function GithubRepoList({ username, perPage = 12 }: RepoListProps) {
+export default function GithubRepoList({
+    username,
+    perPage = 12,
+}: RepoListProps) {
     // React equivalent of @state variables in SwiftUi.
     const [repos, setRepos] = useState<Repo[]>([]);
     const [page, setPage] = useState<number>(1);
@@ -65,7 +68,9 @@ export default function GithubRepoList({ username, perPage = 12 }: RepoListProps
             }
             id={"github-projects"}
         >
-            <h1 className={"mb-4 text-3xl font-space-grotesk"}>Github Projects</h1>
+            <h1 className={"font-space-grotesk mb-4 text-3xl"}>
+                Github Projects
+            </h1>
             {error && <p>Error has occurred: {error}</p>}
             {loading ? (
                 <p>Loading repos...</p>
@@ -113,7 +118,7 @@ export default function GithubRepoList({ username, perPage = 12 }: RepoListProps
                         <p>{page}</p>
                         <button
                             onClick={() => {
-                                setPage(Math.min(page + 1, repos.length-1));
+                                setPage(Math.min(page + 1, repos.length - 1));
                             }}
                             disabled={repos.length < page}
                             className={
@@ -127,4 +132,4 @@ export default function GithubRepoList({ username, perPage = 12 }: RepoListProps
             )}
         </div>
     );
-};
+}

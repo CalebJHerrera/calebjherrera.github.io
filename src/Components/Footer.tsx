@@ -8,4 +8,4 @@ export default function Footer() {
             <p className={"font-space-grotesk"}>Hi this is the footer</p>
         </div>
     );
-};
+}

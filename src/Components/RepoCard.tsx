@@ -15,7 +15,7 @@ export const RepoCard = ({
         <a href={html_url} target={"_blank"}>
             <div
                 className={
-                    "border-cleb-edges break-word hover:border-cleb-accent active:border-cleb-secondary-accent hover:bg-cleb-base h-full justify-end border-2 px-7 wrap-break-word select-none"
+                    "border-cleb-edges break-word hover:border-cleb-accent active:border-cleb-secondary-accent hover:bg-cleb-base cleb-float h-full justify-end border-2 px-7 wrap-break-word select-none"
                 }
             >
                 <p
@@ -25,7 +25,7 @@ export const RepoCard = ({
                 >
                     {name}
                 </p>
-                <p className={"text-xs font-space-grotesk"}>{description}</p>
+                <p className={"font-space-grotesk text-xs"}>{description}</p>
                 <div className={"flex flex-row"}>
                     <p className={"text-sm"}>Stars: </p>
                     <p className={"text-cleb-accent text-sm"}>

@@ -1,11 +1,11 @@
 /* All my colors will be here, ditching Catppuccin latte for a beige green style palette instead. */
 
 @theme {
-    --color-cleb-base: #12141a;             /* Deep Obsidian */
-    --color-cleb-surface: #1a1d26;          /* Dark Slate */
-    --color-cleb-edges: #2d3242;            /* Night Border */
-    --color-cleb-text: #efefea;             /* Parchment White */
-    --color-cleb-secondary-text: #6b7671;   /* Sage Dust */
-    --color-cleb-accent: #cef23f;           /* Electric Moss */
+    --color-cleb-base: #12141a; /* Deep Obsidian */
+    --color-cleb-surface: #1a1d26; /* Dark Slate */
+    --color-cleb-edges: #2d3242; /* Night Border */
+    --color-cleb-text: #efefea; /* Parchment White */
+    --color-cleb-secondary-text: #6b7671; /* Sage Dust */
+    --color-cleb-accent: #cef23f; /* Electric Moss */
     --color-cleb-secondary-accent: #4ca4a9; /* Smoked Teal */
 }
